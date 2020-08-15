@@ -1,6 +1,7 @@
 # ComparaOnline Coding Test
 
 Hi, welcome to my test application to a Software Enginner at ComparaOnline.
+
 This test is based on [ComparaOnline Test Requeriments Specification](https://github.com/comparaonline/interview-coding-test) and it was developed using Node.js.
 
 ## Available Commands

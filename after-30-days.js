@@ -1,13 +1,21 @@
+const CarInsurance = require('./classes/CarInsurance');
+const MediumCoverage = require('./classes/products/MediumCoverage');
+const FullCoverage = require('./classes/products/FullCoverage');
+const LowCoverage = require('./classes/products/LowCoverage');
+const MegaCoverage = require('./classes/products/MegaCoverage');
+const SpecialFullCoverage = require('./classes/products/SpecialFullCoverage');
+const SuperSale = require('./classes/products/SuperSale');
+
 const productsAtDayZero = [
-    new Product('Medium Coverage', 10, 20),
-    new Product('Full Coverage', 2, 0),
-    new Product('Low Coverage', 5, 7),
-    new Product('Mega Coverage', 0, 80),
-    new Product('Mega Coverage', -1, 80),
-    new Product('Special Full Coverage', 15, 20),
-    new Product('Special Full Coverage', 10, 49),
-    new Product('Special Full Coverage', 5, 49),
-    new Product('Super Sale', 3, 6),
+    new MediumCoverage('Medium Coverage', 10, 20),
+    new FullCoverage('Full Coverage', 2, 0),
+    new LowCoverage('Low Coverage', 5, 7),
+    new MegaCoverage('Mega Coverage', 0, 80),
+    new MegaCoverage('Mega Coverage', -1, 80),
+    new SpecialFullCoverage('Special Full Coverage', 15, 20),
+    new SpecialFullCoverage('Special Full Coverage', 10, 49),
+    new SpecialFullCoverage('Special Full Coverage', 5, 49),
+    new SuperSale('Super Sale', 3, 6),
 ];
 
 const carInsurance = new CarInsurance(productsAtDayZero);
