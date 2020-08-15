@@ -24,9 +24,17 @@ test('Medium coverage price after 1 day to be 19', () => {
 });
 
 test('Medium coverage price after 29 days to be 0', () => {
-    for (i = 0; i < 30; i++) {
+    for (i = 0; i < 29; i++) {
         Product2.updatePrice();
     }
 
     expect(Product2.price).toBe(0);
+});
+
+const Product3 = new MediumCoverage('Medium Coverage', 0, 10);
+
+test('Medium coverage price after 1 day to be 8', () => {
+    Product3.updateValues();
+
+    expect(Product3.price).toBe(8);
 });
