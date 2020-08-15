@@ -6,19 +6,15 @@ class Product {
     }
 
     updatePrice() {
-        if (this.price < 1) {
-            this.price = 0;
-        } else if (this.price > 50) {
-            this.price = 50;
-        } else {
-            let decrease = 1;
+        let decrease = 1;
 
-            if (this.sellIn <= 0) {
-                decrease = 2;
-            }
-
-            this.price = this.price - decrease;
+        if (this.sellIn < 0) {
+            decrease = 2;
         }
+
+        this.price = this.price - decrease;
+
+        this.validatePrice();
     }
 
     updateSellIn() {
@@ -28,6 +24,16 @@ class Product {
     updateValues() {
         this.updateSellIn();
         this.updatePrice();
+    }
+
+    validatePrice() {
+        if (this.price < 1) {
+            this.price = 0;
+        }
+
+        if (this.price > 50) {
+            this.price = 50;
+        }
     }
 }
 

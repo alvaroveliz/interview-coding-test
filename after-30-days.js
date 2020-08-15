@@ -29,7 +29,7 @@ console.log('name, sellIn, price');
 carInsurance.products.forEach(productPrinter);
 console.log('');
 
-for (let i = 1; i <= 29; i += 1) {
+for (let i = 1; i <= 30; i += 1) {
     console.log(`-------- day ${i} --------`);
     console.log('name, sellIn, price');
     carInsurance.updateValues();
