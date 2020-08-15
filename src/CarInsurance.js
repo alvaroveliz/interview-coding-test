@@ -3,8 +3,10 @@ class CarInsurance {
         this.products = products;
     }
 
-    updatePrice() {
-        return this.products;
+    updateValues() {
+        this.products.forEach((product) => {
+            product.updateValues();
+        });
     }
 }
 
