@@ -2,10 +2,10 @@
     "name": "interview-coding-test",
     "version": "1.0.0",
     "description": "Interview Coding Test for Comparaonline",
-    "main": "after-30-days.ts",
+    "main": "after-30-days.js",
     "scripts": {
         "after-30-days": "node after-30-days.js",
-        "test": "NODE_ENV=test jest"
+        "test": "NODE_ENV=test jest --coverage"
     },
     "repository": {
         "type": "git",

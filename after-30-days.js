@@ -19,12 +19,18 @@ const productsAtDayZero = [
 ];
 
 const carInsurance = new CarInsurance(productsAtDayZero);
+
 const productPrinter = function (product) {
     console.log(`${product.name}, ${product.sellIn}, ${product.price}`);
 };
 
-for (let i = 1; i <= 30; i += 1) {
-    console.log(`Day ${i}`);
+console.log(`-------- day 0 --------`);
+console.log('name, sellIn, price');
+carInsurance.products.forEach(productPrinter);
+console.log('');
+
+for (let i = 1; i <= 29; i += 1) {
+    console.log(`-------- day ${i} --------`);
     console.log('name, sellIn, price');
     carInsurance.updateValues();
     carInsurance.products.forEach(productPrinter);
