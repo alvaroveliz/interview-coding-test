@@ -1,10 +1,10 @@
-const CarInsurance = require('./classes/CarInsurance');
-const MediumCoverage = require('./classes/products/MediumCoverage');
-const FullCoverage = require('./classes/products/FullCoverage');
-const LowCoverage = require('./classes/products/LowCoverage');
-const MegaCoverage = require('./classes/products/MegaCoverage');
-const SpecialFullCoverage = require('./classes/products/SpecialFullCoverage');
-const SuperSale = require('./classes/products/SuperSale');
+const CarInsurance = require('./src/CarInsurance');
+const MediumCoverage = require('./src/products/MediumCoverage');
+const FullCoverage = require('./src/products/FullCoverage');
+const LowCoverage = require('./src/products/LowCoverage');
+const MegaCoverage = require('./src/products/MegaCoverage');
+const SpecialFullCoverage = require('./src/products/SpecialFullCoverage');
+const SuperSale = require('./src/products/SuperSale');
 
 const productsAtDayZero = [
     new MediumCoverage('Medium Coverage', 10, 20),
