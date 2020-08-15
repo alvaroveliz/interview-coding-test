@@ -5,11 +5,28 @@ class Product {
         this.price = price;
     }
 
-    updatePrice() {}
+    updatePrice() {
+        if (this.price < 1) {
+            this.price = 0;
+        } else {
+            let decrease = 1;
 
-    updateSellIn() {}
+            if (this.sellIn <= 0) {
+                decrease = 2;
+            }
 
-    updateValues() {}
+            this.price = this.price - decrease;
+        }
+    }
+
+    updateSellIn() {
+        this.sellIn = this.sellIn - 1;
+    }
+
+    updateValues() {
+        this.updateSellIn();
+        this.updatePrice();
+    }
 }
 
 module.exports = Product;
